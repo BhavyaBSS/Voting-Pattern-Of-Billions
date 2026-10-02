@@ -1,0 +1,112 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Project: Voting Patterns of a Billion: India's Electoral Trends (2009-2024)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ------------------------------------------------------------------------------
+# Microsoft Office & Power BI Temporary / Lock Files
+# ------------------------------------------------------------------------------
+~$*
+~$*.xlsx
+~$*.xls
+~$*.csv
+~$*.pbix
+~$*.pbit
+~$*.pptx
+~$*.docx
+*.tmp
+*.temp
+*.bak
+*.swp
+*.pbix.temp
+*.pbit.temp
+AutoRecovery save of *
+
+# ------------------------------------------------------------------------------
+# IDEs and Code Editors
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.settings/
+
+# ------------------------------------------------------------------------------
+# Python / Jupyter / Data Science Artifacts (if used for analysis/scraping)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Sensitive Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+
+# ------------------------------------------------------------------------------
+# Large Data & Archive Files (GitHub enforces a 100 MB max file size limit)
+# ------------------------------------------------------------------------------
+# Compressed archives (uncomment or add raw dump archives if any are created)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.gz
+*.iso
+
+# Raw heavy database / dump files
+*.sql
+*.sqlite3
+*.db
+*.log
+*.dump
+
+# Note: The project's curated assignment datasets in `Datasets/` and `Final Dataset.xlsx`
+# are lightweight (< 1 MB each) and safely tracked for report reproducibility.
+# If you add raw datasets > 50-100 MB in the future, list them below or use Git LFS:
+# /Datasets/raw_heavy_data/
+# *.parquet
